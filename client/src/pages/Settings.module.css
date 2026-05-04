@@ -1,0 +1,152 @@
+.section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-xs);
+  overflow: hidden;
+}
+
+.sectionHead {
+  padding: var(--sp-5) var(--sp-6);
+  border-bottom: 1px solid var(--border-1);
+}
+
+.sectionTitle {
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  color: var(--text-1);
+}
+
+.sectionDesc {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  margin-top: var(--sp-1);
+}
+
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Setting row ───────────────────────────────────── */
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  padding: var(--sp-4) var(--sp-6);
+  border-bottom: 1px solid var(--border-1);
+  min-height: 52px;
+}
+
+.settingRow:last-child { border-bottom: none; }
+
+.settingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.settingLabel {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--text-1);
+}
+
+.settingDesc {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}
+
+.settingControl {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ─── Theme toggle ──────────────────────────────────── */
+.themeToggleRow {
+  display: flex;
+  border: 1px solid var(--border-1);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.themeBtn {
+  height: 28px;
+  padding: 0 var(--sp-4);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-3);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.themeBtn:first-child { border-right: 1px solid var(--border-1); }
+
+.themeBtnActive {
+  background: var(--bg-surface-2);
+  color: var(--text-1);
+}
+
+/* ─── Integrations ──────────────────────────────────── */
+.sources {
+  display: flex;
+  flex-direction: column;
+}
+
+.sourceCard {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-6);
+  border-bottom: 1px solid var(--border-1);
+  transition: background var(--t-fast);
+}
+
+.sourceCard:last-child { border-bottom: none; }
+.sourceCard:hover { background: var(--bg-surface-2); }
+
+.sourceIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-1);
+  border-radius: var(--r-md);
+  font-size: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.sourceInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sourceName {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--text-1);
+}
+
+.sourceDesc {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}
+
+.btnConnected {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border-color: var(--success-border) !important;
+  cursor: default;
+}

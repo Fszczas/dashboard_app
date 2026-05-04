@@ -1,0 +1,94 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-5);
+  border-bottom: 1px solid var(--border-1);
+  transition: background var(--t-fast);
+  min-height: 44px;
+}
+
+.row:last-child { border-bottom: none; }
+.row:hover { background: var(--bg-surface-2); }
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-width: 0;
+}
+
+.name {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--text-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex-shrink: 0;
+}
+
+.latency {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  min-width: 44px;
+  text-align: right;
+}
+
+.uptime {
+  font-size: var(--text-sm);
+  color: var(--text-4);
+  min-width: 44px;
+  text-align: right;
+  font-family: var(--font-mono);
+}
+
+.statusBadge {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  padding: 1px 7px;
+  border-radius: var(--r-full);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.statusHealthy {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border-color: var(--success-border);
+}
+
+.statusDegraded {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  border-color: var(--warning-border);
+}
+
+.statusDown {
+  background: var(--error-bg);
+  color: var(--error-text);
+  border-color: var(--error-border);
+}
+
+.skeletonName {
+  width: 120px;
+  height: 14px;
+}
+
+.skeletonBadge {
+  width: 64px;
+  height: 18px;
+  border-radius: var(--r-full);
+}

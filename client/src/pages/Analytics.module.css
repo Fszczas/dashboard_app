@@ -1,0 +1,69 @@
+.pageTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.rangeBar {
+  display: flex;
+  gap: var(--sp-1);
+  flex-shrink: 0;
+}
+
+.rangeBtn {
+  height: 30px;
+  padding: 0 var(--sp-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-3);
+  background: transparent;
+  border: 1px solid var(--border-1);
+  border-radius: var(--r-md);
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+}
+
+.rangeBtn:hover {
+  background: var(--bg-surface-2);
+  color: var(--text-1);
+}
+
+.rangeBtnActive {
+  background: var(--bg-surface-2);
+  color: var(--text-1);
+  border-color: var(--border-2);
+}
+
+/* ─── Stats table ────────────────────────────────────── */
+.statRow {
+  display: grid;
+  grid-template-columns: 130px repeat(4, 1fr);
+  gap: var(--sp-4);
+  align-items: center;
+  padding: var(--sp-3) var(--sp-5);
+  border-bottom: 1px solid var(--border-1);
+  font-size: var(--text-base);
+}
+
+.statRow:last-child { border-bottom: none; }
+.statRow:hover { background: var(--bg-surface-2); }
+
+.statLabel {
+  color: var(--text-2);
+  font-weight: var(--weight-medium);
+}
+
+.statVal {
+  color: var(--text-1);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.statSub {
+  font-size: var(--text-xs);
+  color: var(--text-4);
+  font-weight: var(--weight-normal);
+  margin-left: 2px;
+}
